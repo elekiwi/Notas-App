@@ -6,23 +6,37 @@
 //
 
 import XCTest
+@testable import Notas
 
 final class NoteTest: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func testNoteInitialization(){
+        //Given
+        let title = "Test title"
+        let text = "Text test"
+        let date = Date()
+        
+        //When
+        let note = Note(title: title, text: text, createdAt: date)
+        
+        //Then
+        XCTAssertEqual(note.title, title, "Title should be equal to Test title")
+        XCTAssertEqual(note.text, text)
+        XCTAssertEqual(note.createdAt, date)
     }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+    
+    func testNoteEmptyText(){
+        //Given
+        let title = "Test title"
+        let date = Date()
+        
+        //When
+        let note = Note(title: title, text: nil, createdAt: date)
+        
+        //Then
+        XCTAssertEqual(note.title, title, "Title should be equal to Test title")
+        XCTAssertEqual(note.getText, "")
+        XCTAssertEqual(note.createdAt, date)
     }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test yo u write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
+    
 }
