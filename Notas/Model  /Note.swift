@@ -6,10 +6,11 @@
 //
 
 import Foundation
+import SwiftData
 
-struct Note: Identifiable, Hashable {
-    
-    let id: UUID
+@Model
+class Note: Identifiable, Hashable {
+    @Attribute(.unique) var id: UUID
     let title: String
     let text: String?
     let createdAt: Date
