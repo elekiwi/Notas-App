@@ -20,6 +20,7 @@
 		86F45FC12B3C94E50050868F /* NotesDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F45FC02B3C94E50050868F /* NotesDatabase.swift */; };
 		86F45FC32B3DB3BC0050868F /* CreateNoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F45FC22B3DB3BC0050868F /* CreateNoteUseCase.swift */; };
 		86F45FC52B3DB49D0050868F /* FetchAllNotesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F45FC42B3DB49D0050868F /* FetchAllNotesUseCase.swift */; };
+		86F45FC72B3DCBE70050868F /* ViewModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F45FC62B3DCBE70050868F /* ViewModelIntegrationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		86F45FC02B3C94E50050868F /* NotesDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesDatabase.swift; sourceTree = "<group>"; };
 		86F45FC22B3DB3BC0050868F /* CreateNoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteUseCase.swift; sourceTree = "<group>"; };
 		86F45FC42B3DB49D0050868F /* FetchAllNotesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAllNotesUseCase.swift; sourceTree = "<group>"; };
+		86F45FC62B3DCBE70050868F /* ViewModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelIntegrationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			children = (
 				86024B302B3B0D2E00CFF955 /* NoteTest.swift */,
 				86024B372B3B151900CFF955 /* ViewModelTest.swift */,
+				86F45FC62B3DCBE70050868F /* ViewModelIntegrationTests.swift */,
 			);
 			path = NotasTests;
 			sourceTree = "<group>";
@@ -246,6 +249,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86024B382B3B151900CFF955 /* ViewModelTest.swift in Sources */,
+				86F45FC72B3DCBE70050868F /* ViewModelIntegrationTests.swift in Sources */,
 				86024B312B3B0D2E00CFF955 /* NoteTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
