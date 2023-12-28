@@ -56,10 +56,10 @@ class NotesDatabase: NotesDatabaseProtocol   {
     
     @MainActor
     func fetchAll() throws -> [Note] {
-        let fetchDescriptor = FetchDescriptor<Note>(sortBy: [SortDescriptor<Note>(\.createdAta)])
+        let fetchDescriptor = FetchDescriptor<Note>(sortBy: [SortDescriptor<Note>(\.createdAt)])
         
         do {
-            return try container.mainContext.fetch(fetchDescriptor )
+            return try container.mainContext.fetch(fetchDescriptor)
         } catch {
             print("Error \(error.localizedDescription)")
             throw DatabaseError.errorFetch        }
