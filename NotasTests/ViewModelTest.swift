@@ -14,6 +14,7 @@ final class ViewModelTest: XCTestCase {
     
     override func setUpWithError() throws {
         viewModel = ViewModel()
+        
     }
 
     override func tearDownWithError() throws {

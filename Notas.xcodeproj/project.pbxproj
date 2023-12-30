@@ -21,6 +21,7 @@
 		86F45FC32B3DB3BC0050868F /* CreateNoteUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F45FC22B3DB3BC0050868F /* CreateNoteUseCase.swift */; };
 		86F45FC52B3DB49D0050868F /* FetchAllNotesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F45FC42B3DB49D0050868F /* FetchAllNotesUseCase.swift */; };
 		86F45FC72B3DCBE70050868F /* ViewModelIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F45FC62B3DCBE70050868F /* ViewModelIntegrationTests.swift */; };
+		86F45FCA2B3EE6480050868F /* NoteListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F45FC92B3EE6480050868F /* NoteListCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		86F45FC22B3DB3BC0050868F /* CreateNoteUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNoteUseCase.swift; sourceTree = "<group>"; };
 		86F45FC42B3DB49D0050868F /* FetchAllNotesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchAllNotesUseCase.swift; sourceTree = "<group>"; };
 		86F45FC62B3DCBE70050868F /* ViewModelIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelIntegrationTests.swift; sourceTree = "<group>"; };
+		86F45FC92B3EE6480050868F /* NoteListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 			children = (
 				8671D0092B3752D600A2F41B /* CreateNoteView.swift */,
 				86024B262B3AF7FB00CFF955 /* UpdateNoteView.swift */,
+				86F45FC92B3EE6480050868F /* NoteListCellView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -118,6 +121,7 @@
 		8671CFF22B35A41C00A2F41B /* Notas */ = {
 			isa = PBXGroup;
 			children = (
+				86F45FC82B3EE4190050868F /* UseCases */,
 				8671D0062B35A5CE00A2F41B /* Model   */,
 				86024B292B3AFBF200CFF955 /* ViewModels */,
 				86024B282B3AFBE400CFF955 /* Views */,
@@ -126,8 +130,6 @@
 				8671CFF92B35A41F00A2F41B /* Assets.xcassets */,
 				8671CFFB2B35A41F00A2F41B /* Preview Content */,
 				86F45FC02B3C94E50050868F /* NotesDatabase.swift */,
-				86F45FC22B3DB3BC0050868F /* CreateNoteUseCase.swift */,
-				86F45FC42B3DB49D0050868F /* FetchAllNotesUseCase.swift */,
 			);
 			path = Notas;
 			sourceTree = "<group>";
@@ -146,6 +148,15 @@
 				8671D0032B35A4C900A2F41B /* Note.swift */,
 			);
 			path = "Model  ";
+			sourceTree = "<group>";
+		};
+		86F45FC82B3EE4190050868F /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				86F45FC22B3DB3BC0050868F /* CreateNoteUseCase.swift */,
+				86F45FC42B3DB49D0050868F /* FetchAllNotesUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86F45FCA2B3EE6480050868F /* NoteListCellView.swift in Sources */,
 				8671D0082B35A5FB00A2F41B /* ViewModel.swift in Sources */,
 				86F45FC12B3C94E50050868F /* NotesDatabase.swift in Sources */,
 				8671CFF62B35A41C00A2F41B /* ContentView.swift in Sources */,

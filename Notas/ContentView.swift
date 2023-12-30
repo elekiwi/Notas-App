@@ -19,10 +19,11 @@ struct ContentView: View {
                 ForEach(viewModel.notes) { note  in
                     NavigationLink(value: note){
                         VStack(alignment: .leading){
+//                            NoteListCellView(title: note.title, text: note.getText)
                             Text(note.title)
                                 .foregroundStyle(.primary)
                             Text(note.getText)
-                                .foregroundStyle(.secondary )
+                                .foregroundStyle(.secondary)
                         }
                     }
                 }
@@ -54,6 +55,7 @@ struct ContentView: View {
 }
 
 #Preview() {
+    
     ContentView(viewModel: .init(notes: [
         .init(title: "Hola qeu ", text: "Si qeu tl", createdAt: .now),
         .init(title: "Texto 2 ", text: "Si qeu tl", createdAt: .now)

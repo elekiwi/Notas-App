@@ -11,7 +11,7 @@ import Observation
 @Observable
 class ViewModel {
     
-     var notes: [Note]
+    var notes: [Note]
     
     var createNoteUseCase: CreateNoteUseCase
     var fetchAllNotesUseCase: FetchAllNotesUseCase
