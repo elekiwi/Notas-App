@@ -77,4 +77,24 @@ final class ViewModelIntegrationTests: XCTestCase {
         XCTAssertEqual(lastNote.title, "Title 2")
         XCTAssertEqual(lastNote .text  , "Text 2")
     }
+    
+
+    func testUpdateNote() {
+        //Given
+        sut.createNoteWith(title: "Title 1", text: "Text 1")
+        
+        let note = sut.notes.first
+        let title = "New Title"
+        let text = "New Text"
+        
+        //When
+        if let note = sut.notes.first {
+            sut.updateNoteWith(id: note.id, newTitle: title, newText: text)
+        }
+        
+        //Then
+        XCTAssertEqual(note?.title, title)
+        XCTAssertEqual(note?.text  , text)
+        
+    }
 }

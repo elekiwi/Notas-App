@@ -11,9 +11,9 @@ import SwiftData
 @Model
 class Note: Identifiable, Hashable {
     @Attribute(.unique) var id: UUID
-    let title: String
-    let text: String?
-    let createdAt: Date
+    var title: String
+    var text: String?
+    var createdAt: Date
     
     var getText: String {
         text ?? ""

@@ -16,6 +16,6 @@ struct CreateNoteUseCase {
     
     func createNoteWith(title: String, text: String) throws {
         let note = Note(title: title, text: text, createdAt: .now)
-        try noteDatabase .insert(note: note)
+        try noteDatabase.insert(note: note)
     }
 }

@@ -34,12 +34,13 @@ struct UpdateNoteView: View {
                     .foregroundStyle(.gray)
                     .underline()
             }
-            
+            .buttonStyle(BorderlessButtonStyle())
             Spacer()
         }
         .background(Color(uiColor: .systemGroupedBackground))
         .toolbar {
             ToolbarItem   {
+                //para verlo en la preview añadimos un navigation stack
                 Button {
                     viewModel.updateNoteWith(id: id, newTitle: title, newText: text)
                     dismiss()
